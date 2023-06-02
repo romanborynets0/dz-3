@@ -10,70 +10,83 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Simply Chocolate</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
-        <a href="/" class="header-logo link"
-          ><span>SIMPLY</span> CHOCOLATE
-          <img
-            src="./img/chocolate.svg"
-            alt="logo image"
-            width="24"
-            height="24"
-          />
-        </a>
-        <ul class="header-menu list">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#home">Home</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="./portfolio.html"
-              >How it’s made?</a
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="/" class="header-logo link"
+            ><span>SIMPLY</span> CHOCOLATE
+            <img
+              src="./img/chocolate.svg"
+              alt="logo image"
+              width="24"
+              height="24"
+            />
+          </a>
+          <ul class="header-menu list">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#home">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#loved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-soc">
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              >insta</a
             >
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#loved">Chocolate is loved</a>
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              >twit</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-soc">
-        <li class="header-soc-item">
-          <a
-            class="header-soc-link"
-            href=""
-            aria-label="instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-            >insta</a
-          >
-        </li>
-        <li class="header-soc-item">
-          <a
-            class="header-soc-link"
-            href=""
-            aria-label="twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-            >twit</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
-
+<!-- 1.18.53  https://www.youtube.com/watch?v=UP8EugNdTtM-->
     <main>
+      
       <section id="home" class="hero">
-        <h1 class="hero-title">
+        <div class="container hero-container">
+          <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
-        </h1>
-        <button type="button" class="hero-btn">Buy now</button>
-        <a href="#made" class="hero-link">How it’s made</a>
-        <a href="#footer" class="hero-scroll-link">scroll down</a>
-      </section>
+          </h1>
+          <div class="hero-buttons">
+            <button type="button" class="hero-btn">Buy now</button>
+            <a href="#made" class="hero-link">How it’s made</a>
+            <a href="#footer" class="hero-scroll-link">scroll down</a>
+          </div>
+        </div>
+    </section>
+      
 
       <section class="benefits">
         <h2 hidden>Benefits</h2>
@@ -121,7 +134,10 @@
         </p>
         <ul class="products-list">
           <li class="products-item">
-            <img src="./IMG/section_2/MILK_CHOCOLATE.png" alt="piece of chocolate" />
+            <img
+              src="./IMG/section_2/MILK_CHOCOLATE.png"
+              alt="piece of chocolate"
+            />
             <h3 class="products-subtitle light">MILK CHOCOLATE</h3>
           </li>
           <li class="products-item">
@@ -133,7 +149,10 @@
             <h3 class="products-subtitle light">NUTS</h3>
           </li>
           <li class="products-item">
-            <img src="./img/section_2/sEMI-SWEET_CHOCOLATE.png" alt="semi-sweet chocolate" />
+            <img
+              src="./img/section_2/sEMI-SWEET_CHOCOLATE.png"
+              alt="semi-sweet chocolate"
+            />
             <h3 class="products-subtitle dark">SEMI - SWEET CHOCOLATE</h3>
           </li>
         </ul>
