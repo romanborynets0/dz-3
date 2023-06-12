@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Simply Chocolate</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles1.css" />
   </head>
   <body>
     <header class="header">
@@ -54,8 +54,11 @@
               aria-label="instagram"
               target="_blank"
               rel="noopener noreferrer"
-              >insta</a
             >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./IMG/svg/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="header-soc-item">
             <a
@@ -64,13 +67,15 @@
               aria-label="twitter"
               target="_blank"
               rel="noopener noreferrer"
-              >twit</a
             >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./IMG/svg/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </header>
-    <!-- 1.18.53  https://www.youtube.com/watch?v=UP8EugNdTtM-->
     <main>
       <section id="home" class="hero">
         <div class="container hero-container">
@@ -79,9 +84,16 @@
             of pure delight!
           </h1>
           <div class="hero-buttons">
-            <button type="button" class="hero-btn">Buy now</button>
+             <button type="button" class="hero-btn" data-modal-open>Buy now</button>
             <a href="#made" class="hero-link">How it’s made</a>
-            <a href="#footer" class="hero-scroll-link">scroll down</a>
+            <a href="#footer" class="hero-scroll-link"
+              >scroll down
+              <span>
+                <svg class="hero-scroll-iteam" width="22" height="22">
+                  <use href="./IMG/svg/symbol-defs.svg#icon-angle"></use>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -91,6 +103,13 @@
           <h2 hidden>Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefts-item-block">
+                <svg class="benefts-item-icon" width="32" height="32">
+                  <use
+                    href="./IMG/svg/symbol-defs.svg#icon-chocolate-bar"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -100,6 +119,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefts-item-block">
+                <svg class="benefts-item-icon" width="32" height="32">
+                  <use href="./IMG/svg/symbol-defs.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -110,6 +134,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefts-item-block">
+                <svg class="benefts-item-icon" width="32" height="32">
+                  <use href="./IMG/svg/symbol-defs.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-item-text">
                 We take pride in our own production process, ensuring that every
@@ -140,14 +169,32 @@
                 alt="piece of chocolate"
               />
               <h3 class="products-subtitle light">MILK CHOCOLATE</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-titel">Milk chocolate</p>
+                <p class="products-cover-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="products-item">
               <img src="./img/section_2/MILK.png" alt="bottle of milk" />
               <h3 class="products-subtitle dark">MILK</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-titel"></p>
+                <p class="products-cover-text"></p>
+              </div>
             </li>
             <li class="products-item">
               <img src="./img/section_2/NUTS.png" alt="nuts" />
               <h3 class="products-subtitle light">NUTS</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-titel"></p>
+                <p class="products-cover-text"></p>
+              </div>
             </li>
             <li class="products-item">
               <img
@@ -155,6 +202,10 @@
                 alt="semi-sweet chocolate"
               />
               <h3 class="products-subtitle dark">SEMI - SWEET CHOCOLATE</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-titel"></p>
+                <p class="products-cover-text"></p>
+              </div>
             </li>
           </ul>
         </div>
@@ -162,109 +213,114 @@
 
       <section id="made" class="made">
         <div class="container">
-        <h2 class="made-title section-title">HOW IT’S <span>MADE?</span></h2>
-        <div class="made-wrap">
-        <img
-          src="./img/maide_img.jpg"
-          alt="chocolate"
-          width="600"
-          height="400"
-          class="made-img"
-        />
-       <div class="made-content">
-        <p class="made-text">
-          Try our chocolates today and discover the perfect balance of flavor
-        </p>
-        <ul class="made-list">
-          <li class="made-item">
-            <p class="made-item-text">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </p>
-          </li>
-          <li class="made-item">
-            <p class="made-item-text">
-              At the same time, prepare a water bath. Melt the butter on it.
-            </p>
-          </li>
-          <li class="made-item">
-            <p class="made-item-text">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </p>
-          </li>
-          <li class="made-item">
-            <p class="made-item-text">
-              Heat the mixture over low heat, letting it
-              barely boil.
-            </p>
-          </li>
-          <li class="made-item">
-            <p class="made-item-text">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </p>
-          </li>
-        </ul>
+          <h2 class="made-title section-title">HOW IT’S <span>MADE?</span></h2>
+          <div class="made-wrap">
+            <img
+              src="./img/maide_img.jpg"
+              alt="chocolate"
+              width="600"
+              height="400"
+              class="made-img"
+            />
+            <div class="made-content">
+              <p class="made-text">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </p>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
       <section id="loved" class="loved">
         <div class="container">
-        <h2 class="loved-title section-title">
-          <span>chocolate</span> is loved
-        </h2>
-        <ul class="loved-list">
-          <li class="loved-item">
-            <img
-              src="./img/feedback/Victoria_Dobrzhanska.jpg"
-              alt="Victoria Dobrzhanska photo"
-              width="80"
-              height="80"
-            />
-            <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
-            <p class="loved-item-text">
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
-            </p>
-          </li>
-          <li class="loved-item">
-            <img
-              src="./IMG/feedback/Nazar_Babenko.jpg"
-              alt="Nazar Babenko photo"
-              width="80"
-              height="80"
-            />
-            <h3 class="loved-subtitle">Nazar Babenko</h3>
-            <p class="loved-item-text">
-              This chocolate confection is a delight! A delight! The wafer is
-              light and crisp, the hazelnut cream is smooth, and the chocolate
-              is good.
-            </p>
-          </li>
-          <li class="loved-item">
-            <img
-              src="./IMG/feedback/Olena_Kampusch.jpg"
-              alt="Olena Kampusch photo"
-              width="80"
-              height="80"
-            />
-            <h3 class="loved-subtitle">Olena Kampusch</h3>
-            <p class="loved-item-text">
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
-            </p>
-          </li>
-        </ul>
-        <button type="button" class="loved-btn">Leave a review</button>
+          <h2 class="loved-title section-title">
+            <span>chocolate</span> is loved
+          </h2>
+          <ul class="loved-list">
+            <li class="loved-item">
+              <img
+                src="./img/feedback/Victoria_Dobrzhanska.jpg"
+                alt="Victoria Dobrzhanska photo"
+                width="80"
+                height="80"
+                class="loved-image"
+              />
+              <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
+              <p class="loved-item-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="loved-item">
+              <img
+                src="./IMG/feedback/Nazar_Babenko.jpg"
+                alt="Nazar Babenko photo"
+                width="80"
+                height="80"
+                class="loved-image"
+              />
+              <h3 class="loved-subtitle">Nazar Babenko</h3>
+              <p class="loved-item-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="loved-item">
+              <img
+                src="./IMG/feedback/Olena_Kampusch.jpg"
+                alt="Olena Kampusch photo"
+                width="80"
+                height="80"
+                class="loved-image"
+              />
+              <h3 class="loved-subtitle">Olena Kampusch</h3>
+              <p class="loved-item-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="loved-btn">Leave a review</button>
+        </div>
       </section>
     </main>
 
-        <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-text">
@@ -305,5 +361,11 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
